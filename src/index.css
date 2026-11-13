@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme{
+  --font-display: "Oswald","Anton","Bebas Neue",Impact,"Haettenschweiler","Arial Narrow Bold",sans-serif;
+}
