@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+body {
+  font-family: "Century Gothic", "URW Gothic", Futura, "Trebuchet MS", sans-serif;
+  color: #2d2d2d;
+}
+
+.cond {
+  font-family: "Oswald", "Anton", "Bebas Neue", Impact, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+
 @theme{
-  --font-display: "Oswald","Anton","Bebas Neue",Impact,"Haettenschweiler","Arial Narrow Bold",sans-serif;
+  --color-poupa: #d50304
 }
