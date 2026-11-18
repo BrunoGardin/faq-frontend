@@ -484,7 +484,7 @@ function Faq() {
           ATENDIMENTO OFICIAL • CRÉDITO DO TRABALHADOR
         </p>
         <div>
-          <img src={team} alt="Time Poupacred" className="w-197"/>
+          <img src={team} alt="Time Poupacred" className="w-197 border-poupa border-b-3 pb-2"/>
         </div>
         <Pesquisa props={faqData} />
       </div>
