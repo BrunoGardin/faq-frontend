@@ -11,7 +11,7 @@ export function Modulo({ props }) {
   return (
     <>
       {props.map((card, index) => (
-        <div key={index} className="w-197 mx-auto flex flex-col mt-5" id={card.tag}>
+        <div key={index} className="max-x-full mx-auto flex flex-col mt-5" id={card.tag}>
           <h2 className="text-poupa border-b-3 text-2xl/10 cond">
             <b>{card.title}</b>
           </h2>

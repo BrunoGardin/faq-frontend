@@ -2,6 +2,7 @@ import logo from "../assets/logo.svg";
 import team from "../assets/team.png"
 import { Modulo } from "../components/Cards";
 import { Pesquisa } from "../components/Filtro";
+import { Rodape } from "../components/Rodape";
 
 function Faq() {
   const faqData = [
@@ -474,21 +475,31 @@ function Faq() {
   ];
 
   return (
-    <div>
-      <div className="flex flex-col items-center justify-center justify-items-center mt-5 font-display tracking-widest">
+    <div className="lg:w-197 md:w-150 sm:w-100 w-90 max-x-full mx-auto">
+      <div className="flex flex-col items-center justify-center justify-items-center mt-5 font-display border-poupa border-b-3">
         <img src={logo} alt="Logo Poupacred" className="w-24.75 h-13.5" />
-        <h1 className="text-6xl m-5 cond">
+        <h1 className="text-6xl m-5 cond tracking-widest text-center">
           PERGUNTAS FREQUENTES
         </h1>
-        <p className=" text-xl cond">
+        <p className=" text-xl cond tracking-widest text-center">
           ATENDIMENTO OFICIAL • CRÉDITO DO TRABALHADOR
         </p>
         <div>
           <img src={team} alt="Time Poupacred" className="w-197 border-poupa border-b-3 pb-2"/>
         </div>
         <Pesquisa props={faqData} />
+        <Modulo props={faqData} />
+        <div className="rounded-xl border-poupa border-3 mt-4 p-6 justify-items-start w-full">
+          <h2 className="cond text-2xl/10 text-poupa">Não achou a sua dúvida?</h2>
+          <p>Atendemos de segunda a sexta, das 8h às 18h. Fora desse horário, deixe sua mensagem: uma<br/>consultora te chama no próximo dia útil.</p><br />
+          <p><b>Pós-venda e qualidade:</b> canaldireto@poupacred.com.br · WhatsApp (18) 3344-6659</p>
+          <p><b>Site:</b> www.poupacred.com.br</p>
+        </div>
+        <div className="p-4 mt-4 mb-4 text-sm rounded-xl border border-dashed border-gray-300 bg-neutral-100 justify-items-start w-full">
+          <p className="text-zinc-500">Estas respostas são informativas e não garantem aprovação de crédito. Toda proposta está sujeita à análise do banco. A Poupacred nunca pede depósito, taxa antecipada ou senha. As regras do FGTS seguem a Caixa Econômica Federal e podem mudar.</p>
+        </div>
       </div>
-      <Modulo props={faqData} />
+      <Rodape/>
     </div>
   );
 }
